@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*=======================
+    Home
+=========================*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.expression-main{
+  text-align: center;
+  margin: 80px 0px;
+}
+.expression-main h2{
+  color: #7fbb9b;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+.text-box-detail .MuiFilledInput-root{
+  background: transparent !important;
+  border:1px solid #dfdfdf;
+  width: 260px;
+  margin-right: 10px;
+}
+.text-box-detail .MuiFilledInput-root:hover,
+.text-box-detail .MuiFilledInput-root:focus{
+  background: transparent;
+}
+.text-box-detail .MuiFilledInput-underline:hover::before,
+.text-box-detail .MuiFilledInput-underline:hover::after,
+.text-box-detail .MuiFilledInput-underline:focus::before,
+.text-box-detail .MuiFilledInput-underline:focus::after
+{
+  border-bottom: none;
+}
+.text-box-detail .MuiFilledInput-underline::before,
+.text-box-detail .MuiFilledInput-underline::after
+{
+  border-bottom: none;
+}
+.text-box-detail .MuiFormLabel-root.Mui-focused{
+  color:rgba(0, 0, 0, 0.54) !important;
+}
+.text-box-detail .MuiInputBase-input{
+  padding: 22px 12px 10px;
+}
+.comman-btn{
+  width: 260px;
+  background:#79cea1 !important;
+  border:1px solid #79cea1 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  line-height: 38px !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+ 
+}
+.comman-btn:hover,
+.comman-btn:focus{
+  background:#fff !important;
+  color: #79cea1 !important;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+/*=======================
+    Add
+=========================*/
+
+.add-main{
+  text-align: center;
+  margin: 80px 0px;
+}
+.add-text-value{
+  display: flex;
+  justify-content: center;
+
+}
+.add-text-value .text-value{
+  background: #ecf5f7;
+  color: #000;
+  border-radius: 5px;
+  padding: 50px 60px;
+  margin: 0px 10px;
+  font-size: 45px;
+
+}
+.equal-sign{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.equal-sign span{
+  color: #000;
+  font-size: 45px;
+}
+.answer-main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+ 
+}
+.answer-main{
+  font-size: 55px;
+  color: #52c6e6;
+  font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+  font-weight: 300;
+  
+}
+.select-text-main{
+  display: flex;
+  justify-content: center;
+}
+
+.selectbox-text-value.text-box-detail .MuiFilledInput-root{
+  width: 200px;
+  height: 55px;
+}
+.select-text-main .comman-btn{
+  width: 200px;
+  line-height: 35px !important;
+  height: 55px;
+}
+.selectbox-text-value .MuiSelect-filled.MuiSelect-filled{
+  text-align: left;
+  font-size: 18px;
+  background: transparent !important;
+  margin-top: 3px;
+}
+.selectbox-text-value .MuiSelect-icon{
+  color: #000;
+}
+
+/*=======================
+    responsive
+=========================*/
+@media(max-width:767px){
+  .text-box-detail .MuiFilledInput-root{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .text-box-detail .MuiFormControl-root.MuiTextField-root{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .comman-btn{
+    width: 100%;
+  }
+  .select-text-main{
+    flex-wrap: wrap;
+    margin: 0px -5px;
+  }
+  .select-text-main .comman-btn{
+    width: 99%;
+  }
+  .select-text-main .selectbox-text-value.text-box-detail{
+    width: 100%;
+    display: flex;
+    
+  }
+  .select-text-main .text-box-detail .MuiFormControl-root{
+    width: 50%;
+    padding: 0px 5px;
+  }
+  .selectbox-text-value.text-box-detail .MuiFilledInput-root{
+    width: 100%;
+  }
+ 
+}
+
+@media(max-width:640px){
+  .add-text-value{
+    width: 100%;
+  }
+  .add-text-value .text-value{
+    width: 33.33%;
+    padding: 25px 0px;
+    font-size: 25px;
+  }
+  .equal-sign span{
+    font-size: 20px;
+  }
+  .answer-main{
+    font-size: 30px;
+  }
+}
+
+
+
